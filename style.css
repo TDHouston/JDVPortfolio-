@@ -1,0 +1,35 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+header h1 {
+    text-align: center;
+}
+
+.abstract1 {
+    width: 200px;
+    padding-left: 20px;
+}
+
+.One {
+    position: relative;
+    bottom: 425px;
+    left: 275px;
+    height: 400px;
+}
+
+.abstract2 {
+    text-align: right;
+    width: 200px;
+    position: relative;
+    bottom: 400px;
+    left: 675px;
+}
+
+.Two {
+    height: 400px;
+    padding-left: 20px;
+    position: relative;
+    bottom: 810px;
+}
