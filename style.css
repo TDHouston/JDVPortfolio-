@@ -1,35 +1,172 @@
-html, body {
+/*Universal Styles*/ 
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
+/*
+main {
+    background-color: rgb(28,65,44);
+    height: 950px;
+    margin: 0px 250px;
+    border-radius: 30px;
+}
 
-header h1 {
+/*Header Styles*/
+header {
+    display: flex;
+    max-height: 600px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    background-color: rgb(28,65,44);
+}
+
+/* Navbar Styles */
+li, a, button {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav_links ul {
+    list-style: none;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 50px;
+    min-width: 50px;
+    max-width: 180px;
+}
+
+.nav_links li a{
+    color: rgba(247, 211, 190, 1);
+}
+.nav_links li a:hover {
+    color: rgba(247, 211, 190, 0.8); 
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(234, 99, 31, 1);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(234, 99, 31, 0.8);
+}
+
+/* Slideshow */
+
+.slider-frame {
+   width: 1300px;
+   height: 900px;
+   overflow: hidden;
+   position: relative;
+   left: 50px;
+   top: 25px;
+   border-radius: 30px;
+}
+/*
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bar:hover {
+    background: #fff;
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+*/
+.slide-container {
+   flex: 2 2 500px;
+}
+
+.slide-images{ 
+    width: 20%;
+    transition: 0.6s;
+} 
+
+.slide-images img {
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0%;
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -20%
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#r4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#r5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+#r6:checked ~ .s1 {
+    margin-left: -100%;
+}
+
+#r7:checked ~ .s1 {
+    margin-left: -120%;
+}
+
+#r8:checked ~ .s1 {
+    margin-left: -140%;
+}
+
+/* Abstract - aside */
+
+aside p {
+    font-size: 25px;
+}
+
+/* Footer */
+footer {
+    background-color: #2176FF;
     text-align: center;
-}
-
-.abstract1 {
-    width: 200px;
-    padding-left: 20px;
-}
-
-.One {
     position: relative;
-    bottom: 425px;
-    left: 275px;
-    height: 400px;
+    top: 700px;
+    height: 150px;
+  }
+footer h2 {
+    color: #ffffff;
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 2px;
 }
-
-.abstract2 {
-    text-align: right;
-    width: 200px;
-    position: relative;
-    bottom: 400px;
-    left: 675px;
-}
-
-.Two {
-    height: 400px;
-    padding-left: 20px;
-    position: relative;
-    bottom: 810px;
+  
+a {
+    cursor: default;
+    text-decoration-line: none;
 }
